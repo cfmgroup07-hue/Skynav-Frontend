@@ -1,0 +1,588 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out forwards;
+}
+
+.animate-shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+@layer base {
+  body {
+    @apply bg-sky-50 text-sky-900;
+  }
+
+  html,
+  body,
+  #root {
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-card p-6 transition-shadow duration-200;
+  }
+
+  .card:hover {
+    @apply shadow-card-hover;
+  }
+
+  .button-primary {
+    @apply bg-gradient-to-r from-primary-700 via-primary-600 to-primary-500 text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 active:opacity-95 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .button-secondary {
+    @apply bg-neutral-200 text-neutral-800 px-6 py-3 rounded-lg font-semibold hover:bg-neutral-300 active:bg-neutral-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:ring-offset-2;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-neutral-100 disabled:cursor-not-allowed;
+  }
+
+  .chip {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-900;
+  }
+
+  /* Bootstrap form-range styles */
+  .form-range {
+    width: 100%;
+    height: 1.5rem;
+    padding: 0;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .form-range:focus {
+    outline: none;
+  }
+
+  .form-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+
+  .form-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+
+  .form-range::-moz-focus-outer {
+    border: 0;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    width: 1rem;
+    height: 1rem;
+    margin-top: -0.25rem;
+    background-color: #0d6efd;
+    border: 0;
+    border-radius: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form-range::-webkit-slider-thumb:active {
+    background-color: #b6d4fe;
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.5rem;
+    color: transparent;
+    cursor: pointer;
+    background-color: #dee2e6;
+    border-color: transparent;
+    border-radius: 1rem;
+  }
+
+  .form-range::-moz-range-thumb {
+    width: 1rem;
+    height: 1rem;
+    background-color: #0d6efd;
+    border: 0;
+    border-radius: 1rem;
+    appearance: none;
+    -moz-appearance: none;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form-range::-moz-range-thumb:active {
+    background-color: #b6d4fe;
+  }
+
+  .form-range::-moz-range-track {
+    width: 100%;
+    height: 0.5rem;
+    color: transparent;
+    cursor: pointer;
+    background-color: #dee2e6;
+    border-color: transparent;
+    border-radius: 1rem;
+  }
+
+  .form-range:disabled {
+    pointer-events: none;
+  }
+
+  .form-range:disabled::-webkit-slider-thumb {
+    background-color: #adb5bd;
+  }
+
+  .form-range:disabled::-moz-range-thumb {
+    background-color: #adb5bd;
+  }
+
+  .form-label {
+    margin-bottom: 0.5rem;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold bg-accent-100 text-accent-800;
+  }
+
+  /* Custom Select Styling */
+  select {
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  select:focus {
+    box-shadow: 0 0 0 2px rgba(240, 84, 84, 0.3);
+    outline: none;
+  }
+
+  select:active {
+    transform: scale(0.98);
+  }
+
+  /* Select Options Styling */
+  select option {
+    background-color: #ffffff;
+    color: #374151;
+    padding: 12px 16px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+
+  select option:hover {
+    background-color: #f3f4f6 !important;
+    color: #374151;
+  }
+
+  select option:checked,
+  select option:focus,
+  select option:checked:focus {
+    background-color: #f3f4f6 !important;
+    color: #374151;
+  }
+
+  /* Custom scrollbar for select dropdowns */
+  select::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  select::-webkit-scrollbar-track {
+    background: #1f2937;
+    border-radius: 4px;
+  }
+
+  select::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    border-radius: 4px;
+  }
+
+  select::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+  }
+
+  /* Custom Checkbox Styling */
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+  }
+
+  input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: #04154f !important;
+    border-color: #04154f !important;
+  }
+
+  input[type="checkbox"]:hover {
+    border-color: #04154f;
+  }
+
+  /* Dark blue checkbox for airlines */
+  input[type="checkbox"].checked\:bg-blue-800:checked {
+    background-color: #04154f !important;
+    border-color: #04154f !important;
+  }
+
+  /* Gradient Checkbox Styling */
+  input[type="checkbox"].gradient-checkbox {
+    border: 2px solid #d1d5db;
+    background-color: white;
+  }
+
+  input[type="checkbox"].gradient-checkbox:checked {
+    background: linear-gradient(90deg, #2A6DA0 0%, #5FB6D6 50%, #7ED7F4 100%) !important;
+    border-color: #2A6DA0 !important;
+  }
+
+  input[type="checkbox"].gradient-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+
+  input[type="checkbox"].gradient-checkbox:hover {
+    border-color: #2A6DA0;
+  }
+
+  /* Animated Airplane Submit Button */
+  .airplane-submit-btn {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    perspective: 330px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
+    outline: none;
+    filter: drop-shadow(0 4px 8px rgba(42, 109, 160, 0.4)) drop-shadow(0 2px 4px rgba(42, 109, 160, 0.3));
+    transition: filter 0.3s ease;
+  }
+
+  .airplane-submit-btn:hover {
+    filter: drop-shadow(0 8px 16px rgba(42, 109, 160, 0.5)) drop-shadow(0 4px 8px rgba(42, 109, 160, 0.4));
+  }
+
+  .airplane-submit-btn *,
+  .airplane-submit-btn *::before,
+  .airplane-submit-btn *::after {
+    transition: all 1s;
+  }
+
+  .airplane-submit-btn .rotate {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  .airplane-submit-btn .move {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .airplane-submit-btn .part {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+  }
+
+  .airplane-submit-btn .part::before,
+  .airplane-submit-btn .part::after {
+    content: 'SEARCH';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #2A6DA0 0%, #5FB6D6 50%, #7ED7F4 100%);
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .airplane-submit-btn .part.left::before {
+    transform-origin: 50% 25%;
+    clip-path: polygon(0 0, 100% 0, 100% 1px, 0 calc(50% + 1px));
+  }
+
+  .airplane-submit-btn .part.left::after {
+    clip-path: polygon(0 50%, 100% 0, 100% 1px, 1px 100%, 0 100%);
+  }
+
+  .airplane-submit-btn .part.right::before {
+    clip-path: polygon(0 100%, 100% 0, 100% 1px, calc(50% + 1px) 100%, 50% 100%);
+  }
+
+  .airplane-submit-btn .part.right::after {
+    transform-origin: 75% 50%;
+    clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+  }
+
+  .airplane-submit-btn.checked .rotate {
+    transform: rotate3d(1, -0.2, 0.2, 65deg);
+  }
+
+  .airplane-submit-btn.checked .move {
+    animation: fly 3s cubic-bezier(0.72, -0.23, 0.35, 1.03) 1s both;
+  }
+
+  .airplane-submit-btn.checked .part.left {
+    transform: rotate3d(-1, 1, 0, 60deg);
+  }
+
+  .airplane-submit-btn.checked .part.left::before {
+    transform: rotate3d(-1, 0.5, 0, -60deg);
+  }
+
+  .airplane-submit-btn.checked .part.left::after {
+    background: linear-gradient(90deg, #1e5a8a 0%, #4fa3c4 50%, #6bc5e0 100%);
+  }
+
+  .airplane-submit-btn.checked .part.right {
+    transform: rotate3d(-1, 1, 0, -60deg);
+  }
+
+  .airplane-submit-btn.checked .part.right::before {
+    background: linear-gradient(90deg, #1a4d7a 0%, #4590b0 50%, #5fb3d0 100%);
+  }
+
+  .airplane-submit-btn.checked .part.right::after {
+    transform: rotate3d(-0.25, 0.5, 0, 100deg);
+  }
+
+  /* Small airplane icon that appears during animation */
+  .airplane-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .airplane-submit-btn.checked .airplane-icon {
+    opacity: 1;
+    animation: airplaneFly 3s cubic-bezier(0.72, -0.23, 0.35, 1.03) 1s both;
+  }
+
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-admin {
+    scrollbar-width: thin;
+    scrollbar-color: #6d7bb8 #0c1a56;
+  }
+
+  .scrollbar-admin::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-admin::-webkit-scrollbar-track {
+    background: #0c1a56;
+    border-radius: 10px;
+  }
+
+  .scrollbar-admin::-webkit-scrollbar-thumb {
+    background: #6d7bb8;
+    border-radius: 10px;
+  }
+
+  .scrollbar-admin::-webkit-scrollbar-thumb:hover {
+    background: #8a97d6;
+  }
+
+  .scrollbar-admin-light {
+    scrollbar-width: thin;
+    scrollbar-color: #c7cfe6 #f1f5fb;
+  }
+
+  .scrollbar-admin-light::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-admin-light::-webkit-scrollbar-track {
+    background: #f1f5fb;
+    border-radius: 10px;
+  }
+
+  .scrollbar-admin-light::-webkit-scrollbar-thumb {
+    background: #c7cfe6;
+    border-radius: 10px;
+  }
+
+  .scrollbar-admin-light::-webkit-scrollbar-thumb:hover {
+    background: #aeb8d9;
+  }
+
+  @keyframes fly {
+    0% {
+      transform: translate3D(0, 0, 0rem);
+    }
+
+    50% {
+      transform: translate3D(400rem, -400rem, 0rem);
+    }
+
+    50.00001% {
+      transform: translate3D(-100rem, 100rem, 0rem);
+    }
+
+    100% {
+      transform: translate3D(0rem, 0rem, 0rem);
+    }
+  }
+
+  @keyframes airplaneFly {
+    0% {
+      transform: translate(-50%, -50%) translate3D(0, 0, 0);
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    50% {
+      transform: translate(-50%, -50%) translate3D(400rem, -400rem, 0);
+      opacity: 1;
+    }
+
+    50.00001% {
+      transform: translate(-50%, -50%) translate3D(-100rem, 100rem, 0);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(-50%, -50%) translate3D(0rem, 0rem, 0);
+      opacity: 0;
+    }
+  }
+
+  /* Clean Dropdown List Styling */
+  .dropdown-select {
+    transition: none;
+  }
+
+  /* Style dropdown options list - Clean and Simple */
+  select.dropdown-select option {
+    background-color: white;
+    color: #374151;
+    padding: 10px 12px;
+    font-weight: 500;
+  }
+
+  select.dropdown-select option:hover {
+    background-color: #f9fafb !important;
+    color: #1f2937 !important;
+  }
+
+  select.dropdown-select option:checked,
+  select.dropdown-select option:focus {
+    background-color: #f3f4f6 !important;
+    color: #1f2937 !important;
+    font-weight: 600;
+  }
+
+  /* Custom scrollbar for dropdown */
+  select.dropdown-select::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  select.dropdown-select::-webkit-scrollbar-track {
+    background: #f9fafb;
+    border-radius: 10px;
+  }
+
+  select.dropdown-select::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+  }
+
+  select.dropdown-select::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+}

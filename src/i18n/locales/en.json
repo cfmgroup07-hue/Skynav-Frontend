@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home": "Home",
+    "visas": "Visas",
+    "admin": "Admin"
+  },
+  "visa": {
+    "title": "Visa Applications",
+    "track": "Track your application status"
+  }
+}

@@ -1,0 +1,2040 @@
+{
+  "metadata": {
+    "origin": "DEL",
+    "destination": "LHR",
+    "depart_date": "2024-03-15",
+    "return_date": null,
+    "scraped_at": "2024-01-15T10:30:00Z"
+  },
+  "flights": [
+    {
+      "id": "flight-001",
+      "price": 45000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.5,
+      "airlines": ["Air India"],
+      "booking_token": "token-abc123",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "LHR",
+          "dep_time": "2024-03-15T02:30:00Z",
+          "arr_time": "2024-03-15T08:45:00Z",
+          "duration_min": 375,
+          "flight_no": "AI111",
+          "airline": "Air India"
+        }
+      ],
+      "duration_total_min": 375,
+      "stops": 0,
+      "transfers": [],
+      "seats_left": 5,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-001"
+    },
+    {
+      "id": "flight-002",
+      "price": 52000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.8,
+      "airlines": ["British Airways"],
+      "booking_token": "token-def456",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "LHR",
+          "dep_time": "2024-03-15T14:20:00Z",
+          "arr_time": "2024-03-15T20:35:00Z",
+          "duration_min": 375,
+          "flight_no": "BA257",
+          "airline": "British Airways"
+        }
+      ],
+      "duration_total_min": 375,
+      "stops": 0,
+      "transfers": [],
+      "seats_left": 12,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-002"
+    },
+    {
+      "id": "flight-003",
+      "price": 38000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.2,
+      "airlines": ["Emirates"],
+      "booking_token": "token-ghi789",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "DXB",
+          "dep_time": "2024-03-15T01:00:00Z",
+          "arr_time": "2024-03-15T03:30:00Z",
+          "duration_min": 150,
+          "flight_no": "EK501",
+          "airline": "Emirates"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "dep_time": "2024-03-15T08:00:00Z",
+          "arr_time": "2024-03-15T12:15:00Z",
+          "duration_min": 375,
+          "flight_no": "EK003",
+          "airline": "Emirates"
+        }
+      ],
+      "duration_total_min": 675,
+      "stops": 1,
+      "transfers": ["DXB"],
+      "seats_left": 8,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-003"
+    },
+    {
+      "id": "flight-004",
+      "price": 41000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 8.0,
+      "airlines": ["Vistara"],
+      "booking_token": "token-jkl012",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "LHR",
+          "dep_time": "2024-03-15T23:45:00Z",
+          "arr_time": "2024-03-16T06:00:00Z",
+          "duration_min": 375,
+          "flight_no": "UK997",
+          "airline": "Vistara"
+        }
+      ],
+      "duration_total_min": 375,
+      "stops": 0,
+      "transfers": [],
+      "seats_left": 3,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-004"
+    },
+    {
+      "id": "flight-005",
+      "price": 35000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 6.9,
+      "airlines": ["Qatar Airways"],
+      "booking_token": "token-mno345",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "DOH",
+          "dep_time": "2024-03-15T22:00:00Z",
+          "arr_time": "2024-03-16T00:30:00Z",
+          "duration_min": 150,
+          "flight_no": "QR578",
+          "airline": "Qatar Airways"
+        },
+        {
+          "from": "DOH",
+          "to": "LHR",
+          "dep_time": "2024-03-16T02:00:00Z",
+          "arr_time": "2024-03-16T07:15:00Z",
+          "duration_min": 375,
+          "flight_no": "QR003",
+          "airline": "Qatar Airways"
+        }
+      ],
+      "duration_total_min": 675,
+      "stops": 1,
+      "transfers": ["DOH"],
+      "seats_left": 15,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-005"
+    },
+    {
+      "id": "flight-006",
+      "price": 48000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.3,
+      "airlines": ["Lufthansa"],
+      "booking_token": "token-pqr678",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "FRA",
+          "dep_time": "2024-03-15T03:15:00Z",
+          "arr_time": "2024-03-15T08:30:00Z",
+          "duration_min": 375,
+          "flight_no": "LH761",
+          "airline": "Lufthansa"
+        },
+        {
+          "from": "FRA",
+          "to": "LHR",
+          "dep_time": "2024-03-15T10:00:00Z",
+          "arr_time": "2024-03-15T10:45:00Z",
+          "duration_min": 105,
+          "flight_no": "LH904",
+          "airline": "Lufthansa"
+        }
+      ],
+      "duration_total_min": 510,
+      "stops": 1,
+      "transfers": ["FRA"],
+      "seats_left": 7,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-006"
+    },
+    {
+      "id": "flight-007",
+      "price": 55000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 9.1,
+      "airlines": ["Singapore Airlines"],
+      "booking_token": "token-stu901",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "SIN",
+          "dep_time": "2024-03-15T00:30:00Z",
+          "arr_time": "2024-03-15T07:00:00Z",
+          "duration_min": 390,
+          "flight_no": "SQ402",
+          "airline": "Singapore Airlines"
+        },
+        {
+          "from": "SIN",
+          "to": "LHR",
+          "dep_time": "2024-03-15T23:30:00Z",
+          "arr_time": "2024-03-16T06:00:00Z",
+          "duration_min": 750,
+          "flight_no": "SQ322",
+          "airline": "Singapore Airlines"
+        }
+      ],
+      "duration_total_min": 1140,
+      "stops": 1,
+      "transfers": ["SIN"],
+      "seats_left": 4,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-007"
+    },
+    {
+      "id": "flight-008",
+      "price": 42000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.5,
+      "airlines": ["IndiGo"],
+      "booking_token": "token-vwx234",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "DXB",
+          "dep_time": "2024-03-15T05:00:00Z",
+          "arr_time": "2024-03-15T07:30:00Z",
+          "duration_min": 150,
+          "flight_no": "6E61",
+          "airline": "IndiGo"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "dep_time": "2024-03-15T14:00:00Z",
+          "arr_time": "2024-03-15T18:15:00Z",
+          "duration_min": 375,
+          "flight_no": "EK003",
+          "airline": "Emirates"
+        }
+      ],
+      "duration_total_min": 675,
+      "stops": 1,
+      "transfers": ["DXB"],
+      "seats_left": 9,
+      "baggage_info": "1 checked bag (20kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-008"
+    },
+    {
+      "id": "flight-009",
+      "price": 46000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.2,
+      "airlines": ["Air France"],
+      "booking_token": "token-yza567",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "CDG",
+          "dep_time": "2024-03-15T01:45:00Z",
+          "arr_time": "2024-03-15T07:00:00Z",
+          "duration_min": 375,
+          "flight_no": "AF225",
+          "airline": "Air France"
+        },
+        {
+          "from": "CDG",
+          "to": "LHR",
+          "dep_time": "2024-03-15T09:30:00Z",
+          "arr_time": "2024-03-15T10:15:00Z",
+          "duration_min": 105,
+          "flight_no": "AF1680",
+          "airline": "Air France"
+        }
+      ],
+      "duration_total_min": 510,
+      "stops": 1,
+      "transfers": ["CDG"],
+      "seats_left": 6,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-009"
+    },
+    {
+      "id": "flight-010",
+      "price": 39000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.0,
+      "airlines": ["Turkish Airlines"],
+      "booking_token": "token-bcd890",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "IST",
+          "dep_time": "2024-03-15T20:00:00Z",
+          "arr_time": "2024-03-16T00:30:00Z",
+          "duration_min": 390,
+          "flight_no": "TK716",
+          "airline": "Turkish Airlines"
+        },
+        {
+          "from": "IST",
+          "to": "LHR",
+          "dep_time": "2024-03-16T02:00:00Z",
+          "arr_time": "2024-03-16T04:15:00Z",
+          "duration_min": 255,
+          "flight_no": "TK1980",
+          "airline": "Turkish Airlines"
+        }
+      ],
+      "duration_total_min": 645,
+      "stops": 1,
+      "transfers": ["IST"],
+      "seats_left": 11,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-010"
+    },
+    {
+      "id": "flight-011",
+      "price": 44000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.7,
+      "airlines": ["Etihad Airways"],
+      "booking_token": "token-efg123",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "AUH",
+          "dep_time": "2024-03-15T04:30:00Z",
+          "arr_time": "2024-03-15T07:00:00Z",
+          "duration_min": 150,
+          "flight_no": "EY212",
+          "airline": "Etihad Airways"
+        },
+        {
+          "from": "AUH",
+          "to": "LHR",
+          "dep_time": "2024-03-15T09:00:00Z",
+          "arr_time": "2024-03-15T13:15:00Z",
+          "duration_min": 375,
+          "flight_no": "EY19",
+          "airline": "Etihad Airways"
+        }
+      ],
+      "duration_total_min": 675,
+      "stops": 1,
+      "transfers": ["AUH"],
+      "seats_left": 8,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-011"
+    },
+    {
+      "id": "flight-012",
+      "price": 50000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.6,
+      "airlines": ["Virgin Atlantic"],
+      "booking_token": "token-hij456",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "LHR",
+          "dep_time": "2024-03-15T11:00:00Z",
+          "arr_time": "2024-03-15T17:15:00Z",
+          "duration_min": 375,
+          "flight_no": "VS300",
+          "airline": "Virgin Atlantic"
+        }
+      ],
+      "duration_total_min": 375,
+      "stops": 0,
+      "transfers": [],
+      "seats_left": 2,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-012"
+    },
+    {
+      "id": "flight-013",
+      "price": 36000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 6.8,
+      "airlines": ["Oman Air"],
+      "booking_token": "token-klm789",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "MCT",
+          "dep_time": "2024-03-15T18:00:00Z",
+          "arr_time": "2024-03-15T20:30:00Z",
+          "duration_min": 150,
+          "flight_no": "WY202",
+          "airline": "Oman Air"
+        },
+        {
+          "from": "MCT",
+          "to": "LHR",
+          "dep_time": "2024-03-16T01:00:00Z",
+          "arr_time": "2024-03-16T06:15:00Z",
+          "duration_min": 375,
+          "flight_no": "WY102",
+          "airline": "Oman Air"
+        }
+      ],
+      "duration_total_min": 675,
+      "stops": 1,
+      "transfers": ["MCT"],
+      "seats_left": 13,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-013"
+    },
+    {
+      "id": "flight-014",
+      "price": 47000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 8.1,
+      "airlines": ["KLM"],
+      "booking_token": "token-nop012",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "AMS",
+          "dep_time": "2024-03-15T02:00:00Z",
+          "arr_time": "2024-03-15T07:15:00Z",
+          "duration_min": 375,
+          "flight_no": "KL872",
+          "airline": "KLM"
+        },
+        {
+          "from": "AMS",
+          "to": "LHR",
+          "dep_time": "2024-03-15T09:00:00Z",
+          "arr_time": "2024-03-15T09:45:00Z",
+          "duration_min": 105,
+          "flight_no": "KL1003",
+          "airline": "KLM"
+        }
+      ],
+      "duration_total_min": 510,
+      "stops": 1,
+      "transfers": ["AMS"],
+      "seats_left": 5,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-014"
+    },
+    {
+      "id": "flight-015",
+      "price": 43000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.9,
+      "airlines": ["Swiss International"],
+      "booking_token": "token-qrs345",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "ZRH",
+          "dep_time": "2024-03-15T00:15:00Z",
+          "arr_time": "2024-03-15T05:30:00Z",
+          "duration_min": 375,
+          "flight_no": "LX146",
+          "airline": "Swiss International"
+        },
+        {
+          "from": "ZRH",
+          "to": "LHR",
+          "dep_time": "2024-03-15T07:00:00Z",
+          "arr_time": "2024-03-15T07:50:00Z",
+          "duration_min": 110,
+          "flight_no": "LX326",
+          "airline": "Swiss International"
+        }
+      ],
+      "duration_total_min": 515,
+      "stops": 1,
+      "transfers": ["ZRH"],
+      "seats_left": 7,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-015"
+    },
+    {
+      "id": "flight-016",
+      "price": 37000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 6.7,
+      "airlines": ["SpiceJet"],
+      "booking_token": "token-tuv678",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "DXB",
+          "dep_time": "2024-03-15T12:00:00Z",
+          "arr_time": "2024-03-15T14:30:00Z",
+          "duration_min": 150,
+          "flight_no": "SG15",
+          "airline": "SpiceJet"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "dep_time": "2024-03-15T20:00:00Z",
+          "arr_time": "2024-03-16T00:15:00Z",
+          "duration_min": 375,
+          "flight_no": "EK003",
+          "airline": "Emirates"
+        }
+      ],
+      "duration_total_min": 675,
+      "stops": 1,
+      "transfers": ["DXB"],
+      "seats_left": 14,
+      "baggage_info": "1 checked bag (20kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-016"
+    },
+    {
+      "id": "flight-017",
+      "price": 51000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.8,
+      "airlines": ["Cathay Pacific"],
+      "booking_token": "token-wxy901",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "HKG",
+          "dep_time": "2024-03-15T06:00:00Z",
+          "arr_time": "2024-03-15T12:30:00Z",
+          "duration_min": 390,
+          "flight_no": "CX694",
+          "airline": "Cathay Pacific"
+        },
+        {
+          "from": "HKG",
+          "to": "LHR",
+          "dep_time": "2024-03-15T23:30:00Z",
+          "arr_time": "2024-03-16T05:45:00Z",
+          "duration_min": 735,
+          "flight_no": "CX254",
+          "airline": "Cathay Pacific"
+        }
+      ],
+      "duration_total_min": 1125,
+      "stops": 1,
+      "transfers": ["HKG"],
+      "seats_left": 3,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-017"
+    },
+    {
+      "id": "flight-018",
+      "price": 40000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.4,
+      "airlines": ["GoAir"],
+      "booking_token": "token-zab234",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "DXB",
+          "dep_time": "2024-03-15T15:00:00Z",
+          "arr_time": "2024-03-15T17:30:00Z",
+          "duration_min": 150,
+          "flight_no": "G8151",
+          "airline": "GoAir"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "dep_time": "2024-03-15T22:00:00Z",
+          "arr_time": "2024-03-16T02:15:00Z",
+          "duration_min": 375,
+          "flight_no": "EK003",
+          "airline": "Emirates"
+        }
+      ],
+      "duration_total_min": 675,
+      "stops": 1,
+      "transfers": ["DXB"],
+      "seats_left": 10,
+      "baggage_info": "1 checked bag (20kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-018"
+    },
+    {
+      "id": "flight-019",
+      "price": 49000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.4,
+      "airlines": ["Japan Airlines"],
+      "booking_token": "token-cde567",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "NRT",
+          "dep_time": "2024-03-15T08:00:00Z",
+          "arr_time": "2024-03-15T17:30:00Z",
+          "duration_min": 570,
+          "flight_no": "JL58",
+          "airline": "Japan Airlines"
+        },
+        {
+          "from": "NRT",
+          "to": "LHR",
+          "dep_time": "2024-03-16T11:00:00Z",
+          "arr_time": "2024-03-16T16:15:00Z",
+          "duration_min": 375,
+          "flight_no": "JL41",
+          "airline": "Japan Airlines"
+        }
+      ],
+      "duration_total_min": 945,
+      "stops": 1,
+      "transfers": ["NRT"],
+      "seats_left": 6,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-019"
+    },
+    {
+      "id": "flight-020",
+      "price": 44000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.6,
+      "airlines": ["Thai Airways"],
+      "booking_token": "token-fgh890",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "BKK",
+          "dep_time": "2024-03-15T10:00:00Z",
+          "arr_time": "2024-03-15T15:30:00Z",
+          "duration_min": 330,
+          "flight_no": "TG315",
+          "airline": "Thai Airways"
+        },
+        {
+          "from": "BKK",
+          "to": "LHR",
+          "dep_time": "2024-03-15T23:00:00Z",
+          "arr_time": "2024-03-16T06:15:00Z",
+          "duration_min": 735,
+          "flight_no": "TG910",
+          "airline": "Thai Airways"
+        }
+      ],
+      "duration_total_min": 1065,
+      "stops": 1,
+      "transfers": ["BKK"],
+      "seats_left": 9,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-020"
+    },
+    {
+      "id": "flight-021",
+      "price": 53000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.9,
+      "airlines": ["United Airlines"],
+      "booking_token": "token-ijk123",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "EWR",
+          "dep_time": "2024-03-15T13:00:00Z",
+          "arr_time": "2024-03-15T18:30:00Z",
+          "duration_min": 450,
+          "flight_no": "UA82",
+          "airline": "United Airlines"
+        },
+        {
+          "from": "EWR",
+          "to": "LHR",
+          "dep_time": "2024-03-15T22:00:00Z",
+          "arr_time": "2024-03-16T09:15:00Z",
+          "duration_min": 435,
+          "flight_no": "UA14",
+          "airline": "United Airlines"
+        }
+      ],
+      "duration_total_min": 885,
+      "stops": 1,
+      "transfers": ["EWR"],
+      "seats_left": 4,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-021"
+    },
+    {
+      "id": "flight-022",
+      "price": 38000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 6.9,
+      "airlines": ["AirAsia"],
+      "booking_token": "token-lmn456",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "KUL",
+          "dep_time": "2024-03-15T16:00:00Z",
+          "arr_time": "2024-03-15T22:30:00Z",
+          "duration_min": 390,
+          "flight_no": "AK52",
+          "airline": "AirAsia"
+        },
+        {
+          "from": "KUL",
+          "to": "LHR",
+          "dep_time": "2024-03-16T01:00:00Z",
+          "arr_time": "2024-03-16T08:15:00Z",
+          "duration_min": 735,
+          "flight_no": "D7",
+          "airline": "AirAsia"
+        }
+      ],
+      "duration_total_min": 1125,
+      "stops": 1,
+      "transfers": ["KUL"],
+      "seats_left": 12,
+      "baggage_info": "1 checked bag (20kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-022"
+    },
+    {
+      "id": "flight-023",
+      "price": 46000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.0,
+      "airlines": ["Austrian Airlines"],
+      "booking_token": "token-opq789",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "VIE",
+          "dep_time": "2024-03-15T01:30:00Z",
+          "arr_time": "2024-03-15T06:45:00Z",
+          "duration_min": 375,
+          "flight_no": "OS56",
+          "airline": "Austrian Airlines"
+        },
+        {
+          "from": "VIE",
+          "to": "LHR",
+          "dep_time": "2024-03-15T08:30:00Z",
+          "arr_time": "2024-03-15T09:20:00Z",
+          "duration_min": 110,
+          "flight_no": "OS451",
+          "airline": "Austrian Airlines"
+        }
+      ],
+      "duration_total_min": 515,
+      "stops": 1,
+      "transfers": ["VIE"],
+      "seats_left": 6,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-023"
+    },
+    {
+      "id": "flight-024",
+      "price": 42000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.8,
+      "airlines": ["Finnair"],
+      "booking_token": "token-rst012",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "HEL",
+          "dep_time": "2024-03-15T03:00:00Z",
+          "arr_time": "2024-03-15T08:15:00Z",
+          "duration_min": 375,
+          "flight_no": "AY101",
+          "airline": "Finnair"
+        },
+        {
+          "from": "HEL",
+          "to": "LHR",
+          "dep_time": "2024-03-15T10:00:00Z",
+          "arr_time": "2024-03-15T11:00:00Z",
+          "duration_min": 180,
+          "flight_no": "AY1331",
+          "airline": "Finnair"
+        }
+      ],
+      "duration_total_min": 555,
+      "stops": 1,
+      "transfers": ["HEL"],
+      "seats_left": 8,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-024"
+    },
+    {
+      "id": "flight-025",
+      "price": 39000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.1,
+      "airlines": ["Saudia"],
+      "booking_token": "token-uvw345",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "JED",
+          "dep_time": "2024-03-15T19:00:00Z",
+          "arr_time": "2024-03-15T22:30:00Z",
+          "duration_min": 270,
+          "flight_no": "SV762",
+          "airline": "Saudia"
+        },
+        {
+          "from": "JED",
+          "to": "LHR",
+          "dep_time": "2024-03-16T01:00:00Z",
+          "arr_time": "2024-03-16T06:15:00Z",
+          "duration_min": 375,
+          "flight_no": "SV115",
+          "airline": "Saudia"
+        }
+      ],
+      "duration_total_min": 645,
+      "stops": 1,
+      "transfers": ["JED"],
+      "seats_left": 11,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-025"
+    },
+    {
+      "id": "flight-026",
+      "price": 48000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.5,
+      "airlines": ["Iberia"],
+      "booking_token": "token-xyz678",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "MAD",
+          "dep_time": "2024-03-15T04:00:00Z",
+          "arr_time": "2024-03-15T09:15:00Z",
+          "duration_min": 375,
+          "flight_no": "IB2720",
+          "airline": "Iberia"
+        },
+        {
+          "from": "MAD",
+          "to": "LHR",
+          "dep_time": "2024-03-15T11:00:00Z",
+          "arr_time": "2024-03-15T12:30:00Z",
+          "duration_min": 150,
+          "flight_no": "IB3166",
+          "airline": "Iberia"
+        }
+      ],
+      "duration_total_min": 525,
+      "stops": 1,
+      "transfers": ["MAD"],
+      "seats_left": 5,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-026"
+    },
+    {
+      "id": "flight-027",
+      "price": 41000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.7,
+      "airlines": ["TAP Air Portugal"],
+      "booking_token": "token-abc901",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "LIS",
+          "dep_time": "2024-03-15T05:30:00Z",
+          "arr_time": "2024-03-15T10:45:00Z",
+          "duration_min": 375,
+          "flight_no": "TP192",
+          "airline": "TAP Air Portugal"
+        },
+        {
+          "from": "LIS",
+          "to": "LHR",
+          "dep_time": "2024-03-15T12:30:00Z",
+          "arr_time": "2024-03-15T14:45:00Z",
+          "duration_min": 195,
+          "flight_no": "TP1330",
+          "airline": "TAP Air Portugal"
+        }
+      ],
+      "duration_total_min": 570,
+      "stops": 1,
+      "transfers": ["LIS"],
+      "seats_left": 7,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-027"
+    },
+    {
+      "id": "flight-028",
+      "price": 45000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 8.1,
+      "airlines": ["Alitalia"],
+      "booking_token": "token-def234",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "FCO",
+          "dep_time": "2024-03-15T07:00:00Z",
+          "arr_time": "2024-03-15T12:15:00Z",
+          "duration_min": 375,
+          "flight_no": "AZ404",
+          "airline": "Alitalia"
+        },
+        {
+          "from": "FCO",
+          "to": "LHR",
+          "dep_time": "2024-03-15T14:00:00Z",
+          "arr_time": "2024-03-15T15:30:00Z",
+          "duration_min": 150,
+          "flight_no": "AZ204",
+          "airline": "Alitalia"
+        }
+      ],
+      "duration_total_min": 525,
+      "stops": 1,
+      "transfers": ["FCO"],
+      "seats_left": 6,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-028"
+    },
+    {
+      "id": "flight-029",
+      "price": 37000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 6.6,
+      "airlines": ["Malaysia Airlines"],
+      "booking_token": "token-ghi567",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "KUL",
+          "dep_time": "2024-03-15T14:00:00Z",
+          "arr_time": "2024-03-15T20:30:00Z",
+          "duration_min": 390,
+          "flight_no": "MH194",
+          "airline": "Malaysia Airlines"
+        },
+        {
+          "from": "KUL",
+          "to": "LHR",
+          "dep_time": "2024-03-16T00:00:00Z",
+          "arr_time": "2024-03-16T07:15:00Z",
+          "duration_min": 735,
+          "flight_no": "MH4",
+          "airline": "Malaysia Airlines"
+        }
+      ],
+      "duration_total_min": 1125,
+      "stops": 1,
+      "transfers": ["KUL"],
+      "seats_left": 13,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-029"
+    },
+    {
+      "id": "flight-030",
+      "price": 49000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.7,
+      "airlines": ["All Nippon Airways"],
+      "booking_token": "token-jkl890",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "NRT",
+          "dep_time": "2024-03-15T09:30:00Z",
+          "arr_time": "2024-03-15T19:00:00Z",
+          "duration_min": 570,
+          "flight_no": "NH848",
+          "airline": "All Nippon Airways"
+        },
+        {
+          "from": "NRT",
+          "to": "LHR",
+          "dep_time": "2024-03-16T10:30:00Z",
+          "arr_time": "2024-03-16T15:45:00Z",
+          "duration_min": 375,
+          "flight_no": "NH211",
+          "airline": "All Nippon Airways"
+        }
+      ],
+      "duration_total_min": 945,
+      "stops": 1,
+      "transfers": ["NRT"],
+      "seats_left": 4,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-030"
+    },
+    {
+      "id": "flight-031",
+      "price": 43000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.9,
+      "airlines": ["EgyptAir"],
+      "booking_token": "token-mno123",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "CAI",
+          "dep_time": "2024-03-15T11:00:00Z",
+          "arr_time": "2024-03-15T15:30:00Z",
+          "duration_min": 330,
+          "flight_no": "MS960",
+          "airline": "EgyptAir"
+        },
+        {
+          "from": "CAI",
+          "to": "LHR",
+          "dep_time": "2024-03-15T17:00:00Z",
+          "arr_time": "2024-03-15T21:15:00Z",
+          "duration_min": 375,
+          "flight_no": "MS777",
+          "airline": "EgyptAir"
+        }
+      ],
+      "duration_total_min": 705,
+      "stops": 1,
+      "transfers": ["CAI"],
+      "seats_left": 8,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-031"
+    },
+    {
+      "id": "flight-032",
+      "price": 46000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.2,
+      "airlines": ["Royal Jordanian"],
+      "booking_token": "token-pqr456",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "AMM",
+          "dep_time": "2024-03-15T06:30:00Z",
+          "arr_time": "2024-03-15T10:00:00Z",
+          "duration_min": 270,
+          "flight_no": "RJ180",
+          "airline": "Royal Jordanian"
+        },
+        {
+          "from": "AMM",
+          "to": "LHR",
+          "dep_time": "2024-03-15T12:00:00Z",
+          "arr_time": "2024-03-15T15:15:00Z",
+          "duration_min": 255,
+          "flight_no": "RJ112",
+          "airline": "Royal Jordanian"
+        }
+      ],
+      "duration_total_min": 525,
+      "stops": 1,
+      "transfers": ["AMM"],
+      "seats_left": 6,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-032"
+    },
+    {
+      "id": "flight-033",
+      "price": 40000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.5,
+      "airlines": ["Ethiopian Airlines"],
+      "booking_token": "token-stu789",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "ADD",
+          "dep_time": "2024-03-15T08:00:00Z",
+          "arr_time": "2024-03-15T13:30:00Z",
+          "duration_min": 390,
+          "flight_no": "ET680",
+          "airline": "Ethiopian Airlines"
+        },
+        {
+          "from": "ADD",
+          "to": "LHR",
+          "dep_time": "2024-03-15T15:00:00Z",
+          "arr_time": "2024-03-15T22:15:00Z",
+          "duration_min": 495,
+          "flight_no": "ET701",
+          "airline": "Ethiopian Airlines"
+        }
+      ],
+      "duration_total_min": 885,
+      "stops": 1,
+      "transfers": ["ADD"],
+      "seats_left": 9,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-033"
+    },
+    {
+      "id": "flight-034",
+      "price": 47000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 8.3,
+      "airlines": ["Scandinavian Airlines"],
+      "booking_token": "token-vwx012",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "CPH",
+          "dep_time": "2024-03-15T02:30:00Z",
+          "arr_time": "2024-03-15T07:45:00Z",
+          "duration_min": 375,
+          "flight_no": "SK982",
+          "airline": "Scandinavian Airlines"
+        },
+        {
+          "from": "CPH",
+          "to": "LHR",
+          "dep_time": "2024-03-15T09:30:00Z",
+          "arr_time": "2024-03-15T10:30:00Z",
+          "duration_min": 120,
+          "flight_no": "SK502",
+          "airline": "Scandinavian Airlines"
+        }
+      ],
+      "duration_total_min": 495,
+      "stops": 1,
+      "transfers": ["CPH"],
+      "seats_left": 5,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-034"
+    },
+    {
+      "id": "flight-035",
+      "price": 42000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.8,
+      "airlines": ["Brussels Airlines"],
+      "booking_token": "token-yza345",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "BRU",
+          "dep_time": "2024-03-15T04:00:00Z",
+          "arr_time": "2024-03-15T09:15:00Z",
+          "duration_min": 375,
+          "flight_no": "SN230",
+          "airline": "Brussels Airlines"
+        },
+        {
+          "from": "BRU",
+          "to": "LHR",
+          "dep_time": "2024-03-15T11:00:00Z",
+          "arr_time": "2024-03-15T11:40:00Z",
+          "duration_min": 100,
+          "flight_no": "SN2104",
+          "airline": "Brussels Airlines"
+        }
+      ],
+      "duration_total_min": 475,
+      "stops": 1,
+      "transfers": ["BRU"],
+      "seats_left": 7,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-035"
+    },
+    {
+      "id": "flight-036",
+      "price": 38000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.0,
+      "airlines": ["Kenya Airways"],
+      "booking_token": "token-bcd678",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "NBO",
+          "dep_time": "2024-03-15T12:00:00Z",
+          "arr_time": "2024-03-15T18:30:00Z",
+          "duration_min": 510,
+          "flight_no": "KQ300",
+          "airline": "Kenya Airways"
+        },
+        {
+          "from": "NBO",
+          "to": "LHR",
+          "dep_time": "2024-03-15T20:00:00Z",
+          "arr_time": "2024-03-16T06:15:00Z",
+          "duration_min": 615,
+          "flight_no": "KQ100",
+          "airline": "Kenya Airways"
+        }
+      ],
+      "duration_total_min": 1125,
+      "stops": 1,
+      "transfers": ["NBO"],
+      "seats_left": 12,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-036"
+    },
+    {
+      "id": "flight-037",
+      "price": 50000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.6,
+      "airlines": ["South African Airways"],
+      "booking_token": "token-efg901",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "JNB",
+          "dep_time": "2024-03-15T15:00:00Z",
+          "arr_time": "2024-03-15T23:30:00Z",
+          "duration_min": 630,
+          "flight_no": "SA280",
+          "airline": "South African Airways"
+        },
+        {
+          "from": "JNB",
+          "to": "LHR",
+          "dep_time": "2024-03-16T01:00:00Z",
+          "arr_time": "2024-03-16T09:15:00Z",
+          "duration_min": 615,
+          "flight_no": "SA234",
+          "airline": "South African Airways"
+        }
+      ],
+      "duration_total_min": 1245,
+      "stops": 1,
+      "transfers": ["JNB"],
+      "seats_left": 3,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-037"
+    },
+    {
+      "id": "flight-038",
+      "price": 44000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 8.0,
+      "airlines": ["Aer Lingus"],
+      "booking_token": "token-hij234",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "DUB",
+          "dep_time": "2024-03-15T03:00:00Z",
+          "arr_time": "2024-03-15T08:15:00Z",
+          "duration_min": 375,
+          "flight_no": "EI162",
+          "airline": "Aer Lingus"
+        },
+        {
+          "from": "DUB",
+          "to": "LHR",
+          "dep_time": "2024-03-15T10:00:00Z",
+          "arr_time": "2024-03-15T11:15:00Z",
+          "duration_min": 135,
+          "flight_no": "EI156",
+          "airline": "Aer Lingus"
+        }
+      ],
+      "duration_total_min": 510,
+      "stops": 1,
+      "transfers": ["DUB"],
+      "seats_left": 8,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-038"
+    },
+    {
+      "id": "flight-039",
+      "price": 41000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.6,
+      "airlines": ["Icelandair"],
+      "booking_token": "token-klm567",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "KEF",
+          "dep_time": "2024-03-15T06:00:00Z",
+          "arr_time": "2024-03-15T11:15:00Z",
+          "duration_min": 375,
+          "flight_no": "FI202",
+          "airline": "Icelandair"
+        },
+        {
+          "from": "KEF",
+          "to": "LHR",
+          "dep_time": "2024-03-15T13:00:00Z",
+          "arr_time": "2024-03-15T16:15:00Z",
+          "duration_min": 255,
+          "flight_no": "FI451",
+          "airline": "Icelandair"
+        }
+      ],
+      "duration_total_min": 630,
+      "stops": 1,
+      "transfers": ["KEF"],
+      "seats_left": 9,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-039"
+    },
+    {
+      "id": "flight-040",
+      "price": 48000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.4,
+      "airlines": ["LOT Polish Airlines"],
+      "booking_token": "token-nop890",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "WAW",
+          "dep_time": "2024-03-15T01:00:00Z",
+          "arr_time": "2024-03-15T06:15:00Z",
+          "duration_min": 375,
+          "flight_no": "LO792",
+          "airline": "LOT Polish Airlines"
+        },
+        {
+          "from": "WAW",
+          "to": "LHR",
+          "dep_time": "2024-03-15T08:00:00Z",
+          "arr_time": "2024-03-15T09:30:00Z",
+          "duration_min": 150,
+          "flight_no": "LO268",
+          "airline": "LOT Polish Airlines"
+        }
+      ],
+      "duration_total_min": 525,
+      "stops": 1,
+      "transfers": ["WAW"],
+      "seats_left": 5,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-040"
+    },
+    {
+      "id": "flight-041",
+      "price": 43000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.9,
+      "airlines": ["Czech Airlines"],
+      "booking_token": "token-qrs123",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "PRG",
+          "dep_time": "2024-03-15T05:00:00Z",
+          "arr_time": "2024-03-15T10:15:00Z",
+          "duration_min": 375,
+          "flight_no": "OK182",
+          "airline": "Czech Airlines"
+        },
+        {
+          "from": "PRG",
+          "to": "LHR",
+          "dep_time": "2024-03-15T12:00:00Z",
+          "arr_time": "2024-03-15T13:15:00Z",
+          "duration_min": 135,
+          "flight_no": "OK664",
+          "airline": "Czech Airlines"
+        }
+      ],
+      "duration_total_min": 510,
+      "stops": 1,
+      "transfers": ["PRG"],
+      "seats_left": 7,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-041"
+    },
+    {
+      "id": "flight-042",
+      "price": 39000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.2,
+      "airlines": ["Royal Air Maroc"],
+      "booking_token": "token-tuv456",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "CMN",
+          "dep_time": "2024-03-15T10:00:00Z",
+          "arr_time": "2024-03-15T16:30:00Z",
+          "duration_min": 510,
+          "flight_no": "AT202",
+          "airline": "Royal Air Maroc"
+        },
+        {
+          "from": "CMN",
+          "to": "LHR",
+          "dep_time": "2024-03-15T18:00:00Z",
+          "arr_time": "2024-03-15T21:15:00Z",
+          "duration_min": 255,
+          "flight_no": "AT800",
+          "airline": "Royal Air Maroc"
+        }
+      ],
+      "duration_total_min": 765,
+      "stops": 1,
+      "transfers": ["CMN"],
+      "seats_left": 10,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-042"
+    },
+    {
+      "id": "flight-043",
+      "price": 46000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.1,
+      "airlines": ["TAROM"],
+      "booking_token": "token-wxy789",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "OTP",
+          "dep_time": "2024-03-15T07:30:00Z",
+          "arr_time": "2024-03-15T12:45:00Z",
+          "duration_min": 375,
+          "flight_no": "RO162",
+          "airline": "TAROM"
+        },
+        {
+          "from": "OTP",
+          "to": "LHR",
+          "dep_time": "2024-03-15T14:30:00Z",
+          "arr_time": "2024-03-15T16:00:00Z",
+          "duration_min": 150,
+          "flight_no": "RO154",
+          "airline": "TAROM"
+        }
+      ],
+      "duration_total_min": 525,
+      "stops": 1,
+      "transfers": ["OTP"],
+      "seats_left": 6,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-043"
+    },
+    {
+      "id": "flight-044",
+      "price": 42000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.8,
+      "airlines": ["Aeroflot"],
+      "booking_token": "token-zab012",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "SVO",
+          "dep_time": "2024-03-15T09:00:00Z",
+          "arr_time": "2024-03-15T14:15:00Z",
+          "duration_min": 375,
+          "flight_no": "SU232",
+          "airline": "Aeroflot"
+        },
+        {
+          "from": "SVO",
+          "to": "LHR",
+          "dep_time": "2024-03-15T16:00:00Z",
+          "arr_time": "2024-03-15T17:30:00Z",
+          "duration_min": 150,
+          "flight_no": "SU2580",
+          "airline": "Aeroflot"
+        }
+      ],
+      "duration_total_min": 525,
+      "stops": 1,
+      "transfers": ["SVO"],
+      "seats_left": 8,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-044"
+    },
+    {
+      "id": "flight-045",
+      "price": 38000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.1,
+      "airlines": ["Air India Express"],
+      "booking_token": "token-cde345",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "DXB",
+          "dep_time": "2024-03-15T13:00:00Z",
+          "arr_time": "2024-03-15T15:30:00Z",
+          "duration_min": 150,
+          "flight_no": "IX812",
+          "airline": "Air India Express"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "dep_time": "2024-03-15T21:00:00Z",
+          "arr_time": "2024-03-16T01:15:00Z",
+          "duration_min": 375,
+          "flight_no": "EK003",
+          "airline": "Emirates"
+        }
+      ],
+      "duration_total_min": 675,
+      "stops": 1,
+      "transfers": ["DXB"],
+      "seats_left": 11,
+      "baggage_info": "1 checked bag (20kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-045"
+    },
+    {
+      "id": "flight-046",
+      "price": 50000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.7,
+      "airlines": ["Qantas"],
+      "booking_token": "token-fgh678",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "SYD",
+          "dep_time": "2024-03-15T16:00:00Z",
+          "arr_time": "2024-03-16T08:30:00Z",
+          "duration_min": 1110,
+          "flight_no": "QF302",
+          "airline": "Qantas"
+        },
+        {
+          "from": "SYD",
+          "to": "LHR",
+          "dep_time": "2024-03-16T10:00:00Z",
+          "arr_time": "2024-03-17T06:15:00Z",
+          "duration_min": 1215,
+          "flight_no": "QF1",
+          "airline": "Qantas"
+        }
+      ],
+      "duration_total_min": 2325,
+      "stops": 1,
+      "transfers": ["SYD"],
+      "seats_left": 2,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-046"
+    },
+    {
+      "id": "flight-047",
+      "price": 44000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.0,
+      "airlines": ["Air Canada"],
+      "booking_token": "token-ijk901",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "YYZ",
+          "dep_time": "2024-03-15T11:00:00Z",
+          "arr_time": "2024-03-15T18:30:00Z",
+          "duration_min": 570,
+          "flight_no": "AC54",
+          "airline": "Air Canada"
+        },
+        {
+          "from": "YYZ",
+          "to": "LHR",
+          "dep_time": "2024-03-15T20:00:00Z",
+          "arr_time": "2024-03-16T08:15:00Z",
+          "duration_min": 615,
+          "flight_no": "AC856",
+          "airline": "Air Canada"
+        }
+      ],
+      "duration_total_min": 1185,
+      "stops": 1,
+      "transfers": ["YYZ"],
+      "seats_left": 7,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-047"
+    },
+    {
+      "id": "flight-048",
+      "price": 41000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.7,
+      "airlines": ["Air New Zealand"],
+      "booking_token": "token-lmn234",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "AKL",
+          "dep_time": "2024-03-15T17:00:00Z",
+          "arr_time": "2024-03-16T10:30:00Z",
+          "duration_min": 1110,
+          "flight_no": "NZ186",
+          "airline": "Air New Zealand"
+        },
+        {
+          "from": "AKL",
+          "to": "LHR",
+          "dep_time": "2024-03-16T12:00:00Z",
+          "arr_time": "2024-03-17T06:15:00Z",
+          "duration_min": 1215,
+          "flight_no": "NZ2",
+          "airline": "Air New Zealand"
+        }
+      ],
+      "duration_total_min": 2325,
+      "stops": 1,
+      "transfers": ["AKL"],
+      "seats_left": 9,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-048"
+    },
+    {
+      "id": "flight-049",
+      "price": 47000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.3,
+      "airlines": ["Asiana Airlines"],
+      "booking_token": "token-opq567",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "ICN",
+          "dep_time": "2024-03-15T04:00:00Z",
+          "arr_time": "2024-03-15T12:30:00Z",
+          "duration_min": 630,
+          "flight_no": "OZ762",
+          "airline": "Asiana Airlines"
+        },
+        {
+          "from": "ICN",
+          "to": "LHR",
+          "dep_time": "2024-03-15T14:00:00Z",
+          "arr_time": "2024-03-15T19:15:00Z",
+          "duration_min": 375,
+          "flight_no": "OZ522",
+          "airline": "Asiana Airlines"
+        }
+      ],
+      "duration_total_min": 1005,
+      "stops": 1,
+      "transfers": ["ICN"],
+      "seats_left": 5,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-049"
+    },
+    {
+      "id": "flight-050",
+      "price": 43000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.9,
+      "airlines": ["Korean Air"],
+      "booking_token": "token-rst890",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "ICN",
+          "dep_time": "2024-03-15T05:30:00Z",
+          "arr_time": "2024-03-15T14:00:00Z",
+          "duration_min": 630,
+          "flight_no": "KE482",
+          "airline": "Korean Air"
+        },
+        {
+          "from": "ICN",
+          "to": "LHR",
+          "dep_time": "2024-03-15T15:30:00Z",
+          "arr_time": "2024-03-15T20:45:00Z",
+          "duration_min": 375,
+          "flight_no": "KE908",
+          "airline": "Korean Air"
+        }
+      ],
+      "duration_total_min": 1005,
+      "stops": 1,
+      "transfers": ["ICN"],
+      "seats_left": 8,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-050"
+    },
+    {
+      "id": "flight-051",
+      "price": 78000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 9.0,
+      "airlines": ["British Airways"],
+      "booking_token": "token-uvw123",
+      "segments": [
+        {
+          "from": "BOM",
+          "to": "LHR",
+          "dep_time": "2024-03-15T01:15:00Z",
+          "arr_time": "2024-03-15T09:30:00Z",
+          "duration_min": 495,
+          "flight_no": "BA128",
+          "airline": "British Airways"
+        },
+        {
+          "from": "LHR",
+          "to": "JFK",
+          "dep_time": "2024-03-15T11:30:00Z",
+          "arr_time": "2024-03-15T21:15:00Z",
+          "duration_min": 585,
+          "flight_no": "BA114",
+          "airline": "British Airways"
+        }
+      ],
+      "duration_total_min": 1080,
+      "stops": 1,
+      "transfers": ["LHR"],
+      "seats_left": 7,
+      "baggage_info": "2 checked bags (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-051"
+    },
+    {
+      "id": "flight-052",
+      "price": 42000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.1,
+      "airlines": ["Singapore Airlines"],
+      "booking_token": "token-abc234",
+      "segments": [
+        {
+          "from": "BLR",
+          "to": "SIN",
+          "dep_time": "2024-03-15T03:00:00Z",
+          "arr_time": "2024-03-15T09:30:00Z",
+          "duration_min": 390,
+          "flight_no": "SQ404",
+          "airline": "Singapore Airlines"
+        }
+      ],
+      "duration_total_min": 390,
+      "stops": 0,
+      "transfers": [],
+      "seats_left": 9,
+      "baggage_info": "1 checked bag (30kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-052"
+    },
+    {
+      "id": "flight-053",
+      "price": 28000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.0,
+      "airlines": ["flydubai"],
+      "booking_token": "token-def345",
+      "segments": [
+        {
+          "from": "HYD",
+          "to": "DXB",
+          "dep_time": "2024-03-15T04:45:00Z",
+          "arr_time": "2024-03-15T07:45:00Z",
+          "duration_min": 180,
+          "flight_no": "FZ140",
+          "airline": "flydubai"
+        }
+      ],
+      "duration_total_min": 180,
+      "stops": 0,
+      "transfers": [],
+      "seats_left": 12,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-053"
+    },
+    {
+      "id": "flight-054",
+      "price": 59000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.2,
+      "airlines": ["Lufthansa"],
+      "booking_token": "token-ghi456",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "FRA",
+          "dep_time": "2024-03-15T00:30:00Z",
+          "arr_time": "2024-03-15T05:45:00Z",
+          "duration_min": 315,
+          "flight_no": "LH761",
+          "airline": "Lufthansa"
+        },
+        {
+          "from": "FRA",
+          "to": "CDG",
+          "dep_time": "2024-03-15T07:00:00Z",
+          "arr_time": "2024-03-15T08:30:00Z",
+          "duration_min": 90,
+          "flight_no": "LH1176",
+          "airline": "Lufthansa"
+        }
+      ],
+      "duration_total_min": 405,
+      "stops": 1,
+      "transfers": ["FRA"],
+      "seats_left": 10,
+      "baggage_info": "2 checked bags (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-054"
+    },
+    {
+      "id": "flight-055",
+      "price": 72000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 7.6,
+      "airlines": ["Qatar Airways"],
+      "booking_token": "token-jkl567",
+      "segments": [
+        {
+          "from": "MAA",
+          "to": "DOH",
+          "dep_time": "2024-03-15T00:05:00Z",
+          "arr_time": "2024-03-15T02:50:00Z",
+          "duration_min": 285,
+          "flight_no": "QR576",
+          "airline": "Qatar Airways"
+        },
+        {
+          "from": "DOH",
+          "to": "LAX",
+          "dep_time": "2024-03-15T04:30:00Z",
+          "arr_time": "2024-03-15T12:50:00Z",
+          "duration_min": 500,
+          "flight_no": "QR740",
+          "airline": "Qatar Airways"
+        }
+      ],
+      "duration_total_min": 785,
+      "stops": 1,
+      "transfers": ["DOH"],
+      "seats_left": 6,
+      "baggage_info": "2 checked bags (25kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-055"
+    },
+    {
+      "id": "flight-056",
+      "price": 33000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.3,
+      "airlines": ["IndiGo"],
+      "booking_token": "token-mno678",
+      "segments": [
+        {
+          "from": "BLR",
+          "to": "DXB",
+          "dep_time": "2024-03-15T02:15:00Z",
+          "arr_time": "2024-03-15T04:45:00Z",
+          "duration_min": 210,
+          "flight_no": "6E123",
+          "airline": "IndiGo"
+        }
+      ],
+      "duration_total_min": 210,
+      "stops": 0,
+      "transfers": [],
+      "seats_left": 15,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-056"
+    },
+    {
+      "id": "flight-057",
+      "price": 64000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 7.9,
+      "airlines": ["Qatar Airways"],
+      "booking_token": "token-pqr789",
+      "segments": [
+        {
+          "from": "CCU",
+          "to": "DOH",
+          "dep_time": "2024-03-15T05:00:00Z",
+          "arr_time": "2024-03-15T07:45:00Z",
+          "duration_min": 165,
+          "flight_no": "QR513",
+          "airline": "Qatar Airways"
+        },
+        {
+          "from": "DOH",
+          "to": "LHR",
+          "dep_time": "2024-03-15T09:15:00Z",
+          "arr_time": "2024-03-15T13:40:00Z",
+          "duration_min": 385,
+          "flight_no": "QR10",
+          "airline": "Qatar Airways"
+        }
+      ],
+      "duration_total_min": 550,
+      "stops": 1,
+      "transfers": ["DOH"],
+      "seats_left": 9,
+      "baggage_info": "1 checked bag (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-057"
+    },
+    {
+      "id": "flight-058",
+      "price": 45000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 8.0,
+      "airlines": ["Singapore Airlines"],
+      "booking_token": "token-stu890",
+      "segments": [
+        {
+          "from": "BOM",
+          "to": "SIN",
+          "dep_time": "2024-03-15T03:45:00Z",
+          "arr_time": "2024-03-15T11:15:00Z",
+          "duration_min": 450,
+          "flight_no": "SQ417",
+          "airline": "Singapore Airlines"
+        }
+      ],
+      "duration_total_min": 450,
+      "stops": 0,
+      "transfers": [],
+      "seats_left": 11,
+      "baggage_info": "1 checked bag (30kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-058"
+    },
+    {
+      "id": "flight-059",
+      "price": 87000,
+      "currency": "INR",
+      "refundable": true,
+      "score": 8.7,
+      "airlines": ["Air New Zealand"],
+      "booking_token": "token-vwx901",
+      "segments": [
+        {
+          "from": "DEL",
+          "to": "SIN",
+          "dep_time": "2024-03-15T00:50:00Z",
+          "arr_time": "2024-03-15T08:20:00Z",
+          "duration_min": 450,
+          "flight_no": "NZ570",
+          "airline": "Air New Zealand"
+        },
+        {
+          "from": "SIN",
+          "to": "AKL",
+          "dep_time": "2024-03-15T10:00:00Z",
+          "arr_time": "2024-03-15T20:15:00Z",
+          "duration_min": 495,
+          "flight_no": "NZ244",
+          "airline": "Air New Zealand"
+        }
+      ],
+      "duration_total_min": 945,
+      "stops": 1,
+      "transfers": ["SIN"],
+      "seats_left": 6,
+      "baggage_info": "2 checked bags (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-059"
+    },
+    {
+      "id": "flight-060",
+      "price": 78000,
+      "currency": "INR",
+      "refundable": false,
+      "score": 8.4,
+      "airlines": ["Singapore Airlines"],
+      "booking_token": "token-yza012",
+      "segments": [
+        {
+          "from": "MAA",
+          "to": "SIN",
+          "dep_time": "2024-03-15T01:10:00Z",
+          "arr_time": "2024-03-15T08:50:00Z",
+          "duration_min": 460,
+          "flight_no": "SQ428",
+          "airline": "Singapore Airlines"
+        },
+        {
+          "from": "SIN",
+          "to": "SYD",
+          "dep_time": "2024-03-15T10:05:00Z",
+          "arr_time": "2024-03-15T20:00:00Z",
+          "duration_min": 595,
+          "flight_no": "SQ222",
+          "airline": "Singapore Airlines"
+        }
+      ],
+      "duration_total_min": 1055,
+      "stops": 1,
+      "transfers": ["SIN"],
+      "seats_left": 5,
+      "baggage_info": "2 checked bags (23kg), 1 carry-on (7kg)",
+      "booking_link": "https://example.com/book/flight-060"
+    }
+  ]
+}
+
