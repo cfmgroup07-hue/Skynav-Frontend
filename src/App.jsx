@@ -17,6 +17,7 @@ import MediaRoomPage from './pages/MediaRoomPage'
 import SecurityPage from './pages/SecurityPage'
 import LegalWhistleblowingPage from './pages/LegalWhistleblowingPage'
 import ContactUsPage from './pages/ContactUsPage'
+import SupportPage from './pages/SupportPage'
 import AboutPage from './pages/AboutPage'
 import ProductPage from './pages/ProductPage'
 import PeoplePage from './pages/PeoplePage'
@@ -76,6 +77,7 @@ function App() {
           <Route path="/security" element={<SecurityPage />} />
           <Route path="/legal-whistleblowing" element={<LegalWhistleblowingPage />} />
           <Route path="/contact" element={<ContactUsPage />} />
+          <Route path="/support" element={<SupportPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/people" element={<PeoplePage />} />
