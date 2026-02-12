@@ -1,80 +1,22 @@
-name: Deploy Frontend to VPS
+name: Deploy Frontend
 
 on:
   push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
-  workflow_dispatch:
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-    
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
-        cache: 'npm'
-    
-    - name: Install dependencies
-      run: npm ci
-    
-    - name: Create .env.production file
-      run: |
-        echo "VITE_API_URL=${{ secrets.VITE_API_URL }}" > .env.production
-        echo "VITE_APP_NAME=SkyNav" >> .env.production
-        echo "VITE_API_BASE_URL=${{ secrets.VITE_API_URL }}" >> .env.production
-    
-    - name: Build project
-      run: npm run build
-    
-    - name: Setup SSH
-      uses: webfactory/ssh-agent@v0.9.0
-      with:
-        ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
-    
-    - name: Add VPS to known_hosts
-      run: |
-        mkdir -p ~/.ssh
-        ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
-    
-    - name: Deploy to VPS via rsync
-      run: |
-        rsync -avz --delete dist/ root@${{ secrets.VPS_HOST }}:/var/www/skynav/frontend_temp/
-    
-    - name: Update frontend on VPS
-      uses: appleboy/ssh-action@v1.0.0
-      with:
-        host: ${{ secrets.VPS_HOST }}
-        username: root
-        key: ${{ secrets.VPS_SSH_KEY }}
-        script: |
-          # Navigate to frontend directory
-          cd /var/www/skynav || exit 1
-          
-          # Backup current version
-          rm -rf frontend_backup
-          if [ -d "frontend" ]; then
-            mv frontend frontend_backup
-          fi
-          
-          # Move new version
-          mv frontend_temp frontend
-          
-          # Set permissions
-          chmod -R 755 frontend
-          
-          # Test Nginx config
-          sudo nginx -t
-          
-          # Reload Nginx
-          sudo systemctl reload nginx || sudo systemctl restart nginx
-          
-          echo "✅ Frontend deployment completed successfully!"
+      - uses: actions/checkout@v3
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/skynav/frontend
+            git pull
+            npm install
+            npm run build
